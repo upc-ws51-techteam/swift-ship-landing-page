@@ -3,13 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- styles -->
-		<link rel="stylesheet" href="assets/css/styles.css" />
-		<!-- box icons -->
+
+		<!--box icons-->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
 		/>
+
+		<!--swiper css-->
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+
+		<!-- tab bar information -->
+		<link rel="icon" href="assets/img/swift-ship-logo-no-text.png" />
 		<title>Swift Ship</title>
 	</head>
 	<body>
@@ -20,10 +28,10 @@
 
 				<div class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">About us</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+						<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+						<li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
+						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+						<li class="nav__item"><a href="#contact-us" class="nav__link">Contact us</a></li>
 					</ul>
 				</div>
 
@@ -32,66 +40,293 @@
 				</div>
 			</nav>
 		</header>
+
 		<!-- main -->
-		<main class="main">
-			<div>
-				<div>
-					<!-- bg 1 -->
-					<section class="boats">
-						<img src="assets/img/tim-gouw-exxNNGUWOb0-unsplash.jpg" alt="" class="boats__bg" />
-						<div class="boats__container bd__container">
-							<div class="boats__data">
-								<h2 class="boats__subtitle">Tu aliado al momento de alquilar un barco</h2>
-								<h1 class="boats__title">Swift Ship</h1>
-								<p class="boats__description">
-									Simplificar el alquiler de barcos para que las personas puedan explorar el mundo
-									acuático de manera segura y conveniente, conectando propietarios y amantes del mar
-									a través de una plataforma confiable y eficiente.
-								</p>
-								<a href="" class="boats__button">Explorar <i class="bx bx-right-arrow-alt"></i></a>
+		<main class="main" id="home">
+			<div class="swiper-container gallery-top">
+				<div class="swiper-wrapper">
+					<!-- boats 1 -->
+					<section class="boats swiper-slide ">
+						<img src="assets/img/yacht.jpg" alt="" class="boats__bg" />
+
+						<div class="boats__container bd-container">
+							<div class="boats__data yacht">
+								<h2 class="boats__subtitle yacht">Rental</h2>
+								<h1 class="boats__title yacht">Yacht</h1>
+								<p class="boats__description yacht">Contamos con una gran variedad de yates.</p>
+								<a href="#services" class="boats__button"
+									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
+								></a>
 							</div>
 						</div>
 					</section>
-					<!-- bg 2 -->
-					<section class="boats">
-						<img src="assets/img/kriti-tara-COm-HUP4vqk-unsplash.jpg" alt="" class="boats__bg" />
-						<div class="boats__container bd__container">
+
+					<!-- boats 2 -->
+					<section class="boats swiper-slide">
+						<img src="assets/img/sailboat-2.jpg" alt="" class="boats__bg" />
+
+						<div class="boats__container bd-container">
 							<div class="boats__data">
-								<h2 class="boats__subtitle">2 Tu aliado al momento de alquilar un barco</h2>
-								<h1 class="boats__title">Swift Ship</h1>
-								<p class="boats__description">
-									2 Simplificar el alquiler de barcos para que las personas puedan explorar el mundo
-									acuático de manera segura y conveniente, conectando propietarios y amantes del mar
-									a través de una plataforma confiable y eficiente.
-								</p>
-								<a href="" class="boats__button">Explorar <i class="bx bx-right-arrow-alt"></i></a>
+								<h2 class="boats__subtitle">Rental</h2>
+								<h1 class="boats__title">Sailboat</h1>
+								<p class="boats__description">Contamos con una gran variedad de veleros.</p>
+								<a href="#services" class="boats__button"
+									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
+								></a>
 							</div>
 						</div>
 					</section>
-					<!-- bg 3 -->
-					<section class="boats">
-						<img src="assets/img/ilse-orsel-H8t039oZe2U-unsplash.jpg" alt="" class="boats__bg" />
-						<div class="boats__container bd__container">
+
+					<!-- boats 3 -->
+					<section class="boats swiper-slide">
+						<img src="assets/img/boat-tour.jpg" alt="" class="boats__bg" />
+
+						<div class="boats__container bd-container">
 							<div class="boats__data">
-								<h2 class="boats__subtitle">3 Tu aliado al momento de alquilar un barco</h2>
-								<h1 class="boats__title">Swift Ship</h1>
-								<p class="boats__description">
-									3 Simplificar el alquiler de barcos para que las personas puedan explorar el mundo
-									acuático de manera segura y conveniente, conectando propietarios y amantes del mar
-									a través de una plataforma confiable y eficiente.
-								</p>
-								<a href="" class="boats__button">Explorar <i class="bx bx-right-arrow-alt"></i></a>
+								<h2 class="boats__subtitle">Tour</h2>
+								<h1 class="boats__title">Yatch/Sailboat tours</h1>
+								<p class="boats__description">Tú eliges el barco y nosotros te llevamos.</p>
+								<a href="#services" class="boats__button"
+									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
+								></a>
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
+
+			<!-- controls-->
+			<div class="controls gallery-thumbs">
+				<div class="controls__container swiper-wrapper">
+					<img
+						src="assets/img/yacht.jpg"
+						alt=""
+						class="controls__img swiper-slide"
+					/>
+					<img
+						src="assets/img/sailboat-2.jpg"
+						alt=""
+						class="controls__img swiper-slide"
+					/>
+					<img
+						src="assets/img/boat-tour.jpg"
+						alt=""
+						class="controls__img swiper-slide"
+					/>
+				</div>
+			</div>
 		</main>
+		<!-- about us -->
+		<section id="about-us">
+			<div class="we-are-block">
+				<div id="about-us-section">
+					<div class="about-us-image">
+						<img
+							src="assets/img/team.jpg"
+							width="808"
+							height="458"
+							alt="Lobby Image"
+						/>
+					</div>
+
+					<div class="about-us-info">
+						<h2>Who Are We?</h2>
+
+						<p>
+							Swift Ship es una emocionante empresa de alquiler de embarcaciones que ofrece a los
+							amantes del agua y la aventura la oportunidad de explorar paisajes acuáticos
+							impresionantes de una manera cómoda y accesible. Nuestra misión es proporcionar
+							experiencias inolvidables en el agua, fomentando la pasión por la navegación y
+							conectando a las personas con la belleza de los océanos, ríos y lagos.
+						</p>
+					</div>
+				</div>
+
+				<div id="history-section">
+					<div class="history-image">
+						<img
+							src="https://digitalupgrade.com/images/building_pic.jpg"
+							width="951"
+							height="471"
+							alt="Building Pic"
+						/>
+					</div>
+
+					<div class="history-info">
+						<h2>Our History</h2>
+
+						<p>
+							Swift Ship tuvo su origen en el corazón de Lima, Perú, cuando un grupo de amantes del
+							mar fundó la empresa con la visión de hacer que la navegación fuera accesible para
+							todos. Desde su fundación en 1879, Swift Ship ha crecido constantemente, ampliando su
+							flota y enfocándose en brindar experiencias seguras y memorables en el mar. La empresa
+							se destaca por su compromiso con la satisfacción del cliente y ha sido parte de
+							innumerables aventuras marinas en la hermosa costa peruana. La historia de Swift Ship
+							está marcada por la pasión por el mar y la búsqueda constante de la excelencia en el
+							servicio al cliente.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services -->
+		<section class="our_service_section" id="services">
+			<h3 class="section_title">Our Services</h3>
+			<p class="section_details">Swift Ship ofrece a sus clientes los siguientes servicios:</p>
+
+			<div class="single_service_container">
+				<!-- single service start -->
+				<div class="single_service">
+					<div class="top">
+						<span class="icon">
+							<i class="bx bxs-ship"></i>
+						</span>
+						<div class="text">
+							<h4 class="__one">Rental</h4>
+							<h3 class="__two">Yatch rental</h3>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<p>
+							Alquiler de yates de gama media y alta, contamos con una gran selección de navíos para
+							satisfacer todas las posibles necesidades que tengan nuestros clientes.
+						</p>
+					</div>
+				</div>
+				<!-- single service end -->
+
+				<!-- single service start -->
+				<div class="single_service">
+					<div class="top">
+						<span class="icon">
+							<i class="bx bx-water"></i>
+						</span>
+						<div class="text">
+							<h4 class="__one">Tour</h4>
+							<h3 class="__two">Yatch or sailboat tour</h3>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<p>
+							Para nuestros clientes sin experiencia en navegación o que simplemente buscan
+							relajarse todo el día, ofrecemos tours a donde usted desee.
+						</p>
+					</div>
+				</div>
+				<!-- single service end -->
+
+				<!-- single service start -->
+				<div class="single_service">
+					<div class="top">
+						<span class="icon">
+							<i class="bx bxs-ship"></i>
+						</span>
+						<div class="text">
+							<h4 class="__one">Rental</h4>
+							<h3 class="__two">Sailbout rental</h3>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<p>
+							Alquiler de barcos de vela de gama media y alta, contamos con una gran selección de
+							navíos para satisfacer todas las posibles necesidades que tengan nuestros clientes.
+						</p>
+					</div>
+				</div>
+				<!-- single service end -->
+			</div>
+		</section>
+		<!-- contact us -->
+		<section id="contact-us">
+			<div class="section-header">
+				<div class="container">
+					<h2>Contact Us</h2>
+					<p>
+						Para cualquier consulta, no dudes en contactar con nosotros.</br> Siempre estamos felices de escucharte y atender tus dudas.
+					</p>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="contact-info">
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="bx bxs-home"></i>
+							</div>
+
+							<div class="contact-info-content">
+								<h4>Address</h4>
+								<p>Prolongación Primavera 2390,</br> Santiago de Surco 15023</p>
+							</div>
+						</div>
+
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="bx bxs-phone"></i>
+							</div>
+
+							<div class="contact-info-content">
+								<h4>Phone</h4>
+								<p>(01) 630-3333</p>
+							</div>
+						</div>
+
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="bx bxs-envelope"></i>
+							</div>
+
+							<div class="contact-info-content">
+								<h4>Email</h4>
+								<p>corporate@swiftship.com</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact-form">
+						<form action="" id="contact-form">
+							<h2>Send Message</h2>
+							<div class="input-box">
+								<input type="text" required="true" name="" />
+								<span>Full Name</span>
+							</div>
+
+							<div class="input-box">
+								<input type="email" required="true" name="" />
+								<span>Email</span>
+							</div>
+
+							<div class="input-box">
+								<textarea required="true" name=""></textarea>
+								<span>Type your Message...</span>
+							</div>
+
+							<div class="input-box">
+								<input type="submit" value="Send" name="" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- gsap -->
-		<script src=""></script>
+		<script src="assets/js/gsap.min.js"></script>
+
 		<!-- swiper js -->
-		<script src=""></script>
+		<script src="assets/js/swiper-bundle.min.js"></script>
+
 		<!-- main js -->
 		<script src="assets/js/main.js"></script>
 	</body>
+	<footer>
+		<div class="copyright">
+			© 2023 Todos los Derechos Reservados |
+			<a href="https://github.com/upc-ws51-techteam" target="_blank">TechTeam</a>
+		</div>
+	</footer>
 </html>
