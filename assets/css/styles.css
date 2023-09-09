@@ -6,7 +6,7 @@
 
 	/* colors */
 	--first-color: #0c2642;
-	--first-color-lighter: #a1e887;
+	--first-color-lighter: #ecf3f2;
 	--title-color: #6a8d92;
 	--text-color: #80b192;
 	--body-color: #f5fffe;
@@ -15,7 +15,7 @@
 	--body-font: 'Poppins', sans-serif;
 	--biggest-font-size: 3rem;
 	--big-font-size: 1.25rem;
-	--normal-font-size: 1rem;
+	--normal-font-size: 0.938rem;
 
 	/* font weight */
 	--font-medium: 500;
@@ -28,9 +28,9 @@
 
 @media screen and (min-width: 1024px) {
 	:root {
-		--biggest-font-size: 5rem;
+		--biggest-font-size: 5.5rem;
 		--big-font-size: 2rem;
-		--normal-font-size: 1.1rem;
+		--normal-font-size: 1rem;
 	}
 }
 
@@ -75,7 +75,7 @@ img {
 }
 
 .bd-container {
-	max-width: 960px;
+	max-width: 968px;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
@@ -89,9 +89,9 @@ img {
 	z-index: var(--z-fixed);
 }
 
-/* navi */
+/* nav */
 .nav {
-	max-width: 960px;
+	max-width: 968px;
 	height: var(--header-height);
 	display: flex;
 	justify-content: space-between;
@@ -101,7 +101,7 @@ img {
 @media screen and (max-width: 768px) {
 	.nav__menu {
 		position: fixed;
-		top: 4rem;
+		top: -100%;
 		left: 0;
 		right: 0;
 		width: 90%;
@@ -131,4 +131,33 @@ img {
 .nav__toggle {
 	font-size: 1.2rem;
 	cursor: pointer;
+}
+
+/* show menu */
+.show-menu {
+	top: calc(var(--header-height) + 1rem);
+}
+
+/* boats */
+.boats {
+	height: 100vh;
+	position: relative;
+}
+
+.boats__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: center;
+}
+
+.boats__container {
+	position: relative;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 2fr 0.25fr;
+	align-content: center;
 }
