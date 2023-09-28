@@ -37,3 +37,34 @@ function scrollAnimation() {
 }
 
 controlImg.forEach((c) => c.addEventListener('click', scrollAnimation));
+
+// Function to fetch translations from a JSON file
+async function loadTranslations(language) {
+	try {
+		const response = await fetch(`assets/js/translations/${language}.json`);
+		const translations = await response.json();
+		return translations;
+	} catch (error) {
+		console.error('Error loading translations:', error);
+	}
+}
+
+// Function to update content with translations
+async function translateContent(language) {
+	const translations = await loadTranslations(language);
+
+	// Update content with translations
+	document.querySelectorAll('[data-translate]').forEach((element) => {
+		const translationKey = element.getAttribute('data-translate');
+		if (translations && translations[translationKey]) {
+			element.textContent = translations[translationKey];
+		}
+	});
+}
+
+// Attach event listeners to language switch buttons
+document.getElementById('english-btn').addEventListener('click', () => translateContent('en'));
+document.getElementById('spanish-btn').addEventListener('click', () => translateContent('es'));
+
+// Show English content by default
+translateContent('en');

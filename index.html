@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Swift Ship official Landing Page site"/>
 		<meta name="keywords" content="UX, Digital Transformation, APPS, Landing Page, Software Development"/>
-    	<meta name="author" content="TechTeam"/>
+   	<meta name="author" content="TechTeam"/>
 
 		<!--box icons-->
 		<link
@@ -32,13 +32,14 @@
 
 				<div class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-						<li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
-						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-						<li class="nav__item"><a href="#contact-us" class="nav__link">Contact us</a></li>
+						<li class="nav__item"><a href="#home" class="nav__link" data-translate="home">Home</a></li>
+						<li class="nav__item"><a href="#about-us" class="nav__link" data-translate="about_us">About us</a></li>
+						<li class="nav__item"><a href="#services" class="nav__link" data-translate="services">Services</a></li>
+						<li class="nav__item"><a href="#contact-us" class="nav__link" data-translate="contact_us">Contact us</a></li>
+						<li class="nav__item"><button class="nav__link" id="english-btn"><img src="assets/img/uk.png" alt=""></button></li>
+						<li class="nav__item"><button class="nav__link" id="spanish-btn"><img src="assets/img/pe.png" alt=""></button></li>
 					</ul>
 				</div>
-
 				<div class="nav__toggle" id="nav-toggle">
 					<i class="bx bx-menu"></i>
 				</div>
@@ -47,6 +48,7 @@
 
 		<!-- main -->
 		<main class="main" id="home">
+			
 			<div class="swiper-container gallery-top">
 				<div class="swiper-wrapper">
 					<!-- boats 1 -->
@@ -55,10 +57,10 @@
 
 						<div class="boats__container bd-container">
 							<div class="boats__data yacht">
-								<h2 class="boats__subtitle yacht">Rental</h2>
-								<h1 class="boats__title yacht">Yacht</h1>
-								<p class="boats__description yacht">Contamos con una gran variedad de yates.</p>
-								<a href="#services" class="boats__button"
+								<h2 class="boats__subtitle yacht" data-translate="rental">Rental</h2>
+								<h1 class="boats__title yacht" data-translate="yacht">Yacht</h1>
+								<p class="boats__description yacht" data-translate="description_yacht">Contamos con una gran variedad de yates.</p>
+								<a href="#services" class="boats__button" data-translate="explore"
 									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
 								></a>
 							</div>
@@ -71,10 +73,10 @@
 
 						<div class="boats__container bd-container">
 							<div class="boats__data">
-								<h2 class="boats__subtitle">Rental</h2>
-								<h1 class="boats__title">Sailboat</h1>
-								<p class="boats__description">Contamos con una gran variedad de veleros.</p>
-								<a href="#services" class="boats__button"
+								<h2 class="boats__subtitle" data-translate="rental">Rental</h2>
+								<h1 class="boats__title" data-translate="sailboat">Sailboat</h1>
+								<p class="boats__description" data-translate="description_sailboat">Contamos con una gran variedad de veleros.</p>
+								<a href="#services" class="boats__button" data-translate="explore"
 									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
 								></a>
 							</div>
@@ -87,10 +89,10 @@
 
 						<div class="boats__container bd-container">
 							<div class="boats__data">
-								<h2 class="boats__subtitle">Tour</h2>
-								<h1 class="boats__title">Yatch/Sailboat tours</h1>
-								<p class="boats__description">Tú eliges el barco y nosotros te llevamos.</p>
-								<a href="#services" class="boats__button"
+								<h2 class="boats__subtitle" data-translate="tour">Tour</h2>
+								<h1 class="boats__title" data-translate="tour_text">Yatch/Sailboat tours</h1>
+								<p class="boats__description" data-translate="description_tour">Tú eliges el barco y nosotros te llevamos.</p>
+								<a href="#services" class="boats__button" data-translate="explore"
 									>Explore <i class="bx bx-right-arrow-alt boats__button-icon"></i
 								></a>
 							</div>
@@ -132,9 +134,9 @@
 					</div>
 
 					<div class="about-us-info">
-						<h2>Who Are We?</h2>
+						<h2 data-translate="who_are_we">Who Are We?</h2>
 
-						<p>
+						<p data-translate="description_who_are_we">
 							Swift Ship es una emocionante empresa de alquiler de embarcaciones que ofrece a los
 							amantes del agua y la aventura la oportunidad de explorar paisajes acuáticos
 							impresionantes de una manera cómoda y accesible. Nuestra misión es proporcionar
@@ -155,9 +157,9 @@
 					</div>
 
 					<div class="history-info">
-						<h2>Our History</h2>
+						<h2 data-translate="our_history">Our History</h2>
 
-						<p>
+						<p data-translate="description_our_history">
 							Swift Ship tuvo su origen en el corazón de Lima, Perú, cuando un grupo de amantes del
 							mar fundó la empresa con la visión de hacer que la navegación fuera accesible para
 							todos. Desde su fundación en 1879, Swift Ship ha crecido constantemente, ampliando su
@@ -172,11 +174,11 @@
 
 				<div class="about-us-section">
 					<div class="about-the-card">
-						<h3>About the team</h3>
+						<h3 data-translate="about_the_team">About the team</h3>
 						<iframe src="https://www.youtube.com/" frameborder="0"></iframe>
 					</div>
 					<div class="about-the-card">
-						<h3>About the product</h3>
+						<h3 data-translate="about_the_product">About the product</h3>
 						<iframe src="https://www.youtube.com/" frameborder="0"></iframe>
 					</div>
 				</div>
@@ -184,8 +186,8 @@
 		</section>
 		<!-- services -->
 		<section class="our_service_section" id="services">
-			<h3 class="section_title">Our Services</h3>
-			<p class="section_details">Swift Ship ofrece a sus clientes los siguientes servicios:</p>
+			<h3 class="section_title" data-translate="our_services">Our Services</h3>
+			<p class="section_details" data-translate="description_our_services">Swift Ship ofrece a sus clientes los siguientes servicios:</p>
 
 			<div class="single_service_container">
 				<!-- single service start -->
@@ -195,13 +197,13 @@
 							<i class="bx bxs-ship"></i>
 						</span>
 						<div class="text">
-							<h4 class="__one">Rental</h4>
-							<h3 class="__two">Yatch rental</h3>
+							<h4 class="__one" data-translate="rental">Rental</h4>
+							<h3 class="__two" data-translate="description_our_services_1">Yatch rental</h3>
 						</div>
 					</div>
 
 					<div class="bottom">
-						<p>
+						<p data-translate="description_our_services_1_info">
 							Alquiler de yates de gama media y alta, contamos con una gran selección de navíos para
 							satisfacer todas las posibles necesidades que tengan nuestros clientes.
 						</p>
@@ -216,13 +218,13 @@
 							<i class="bx bx-water"></i>
 						</span>
 						<div class="text">
-							<h4 class="__one">Tour</h4>
-							<h3 class="__two">Yatch or sailboat tour</h3>
+							<h4 class="__one" data-translate="tour">Tour</h4>
+							<h3 class="__two" data-translate="description_our_services_2">Yatch or sailboat tour</h3>
 						</div>
 					</div>
 
 					<div class="bottom">
-						<p>
+						<p data-translate="description_our_services_2_info">
 							Para nuestros clientes sin experiencia en navegación o que simplemente buscan
 							relajarse todo el día, ofrecemos tours a donde usted desee.
 						</p>
@@ -237,13 +239,13 @@
 							<i class="bx bxs-ship"></i>
 						</span>
 						<div class="text">
-							<h4 class="__one">Rental</h4>
-							<h3 class="__two">Sailbout rental</h3>
+							<h4 class="__one" data-translate="rental">Rental</h4>
+							<h3 class="__two" data-translate="description_our_services_3">Sailbout rental</h3>
 						</div>
 					</div>
 
 					<div class="bottom">
-						<p>
+						<p data-translate="description_our_services_3_info">
 							Alquiler de barcos de vela de gama media y alta, contamos con una gran selección de
 							navíos para satisfacer todas las posibles necesidades que tengan nuestros clientes.
 						</p>
@@ -256,8 +258,8 @@
 		<section id="contact-us">
 			<div class="section-header">
 				<div class="container">
-					<h2>Contact Us</h2>
-					<p>
+					<h2 data-translate="contact_us">Contact Us</h2>
+					<p data-translate="description_contact_us">
 						Para cualquier consulta, no dudes en contactar con nosotros.</br> Siempre estamos felices de escucharte y atender tus dudas.
 					</p>
 				</div>
@@ -272,7 +274,7 @@
 							</div>
 
 							<div class="contact-info-content">
-								<h4>Address</h4>
+								<h4 data-translate="address">Address</h4>
 								<p>Prolongación Primavera 2390,</br> Santiago de Surco 15023</p>
 							</div>
 						</div>
@@ -283,7 +285,7 @@
 							</div>
 
 							<div class="contact-info-content">
-								<h4>Phone</h4>
+								<h4 data-translate="phone">Phone</h4>
 								<p>(01) 630-3333</p>
 							</div>
 						</div>
@@ -294,7 +296,7 @@
 							</div>
 
 							<div class="contact-info-content">
-								<h4>Email</h4>
+								<h4 data-translate="email">Email</h4>
 								<p>corporate@swiftship.com</p>
 							</div>
 						</div>
@@ -302,24 +304,24 @@
 
 					<div class="contact-form">
 						<form action="" id="contact-form">
-							<h2>Send Message</h2>
+							<h2 data-translate="send_message">Send Message</h2>
 							<div class="input-box">
 								<input type="text" required="true" name="" />
-								<span>Full Name</span>
+								<span data-translate="full_name">Full Name</span>
 							</div>
 
 							<div class="input-box">
 								<input type="email" required="true" name="" />
-								<span>Email</span>
+								<span data-translate="email">Email</span>
 							</div>
 
 							<div class="input-box">
 								<textarea required="true" name=""></textarea>
-								<span>Type your Message...</span>
+								<span data-translate="type_your_message">Type your Message...</span>
 							</div>
 
 							<div class="input-box">
-								<input type="submit" value="Send" name="" />
+								<input type="submit" value="Send" name=""/>
 							</div>
 						</form>
 					</div>
@@ -338,8 +340,8 @@
 	</body>
 	<footer>
 		<div class="copyright">
-			© 2023 Todos los Derechos Reservados |
-			<a href="https://github.com/upc-ws51-techteam" target="_blank">TechTeam</a>
+			<strong data-translate="trademark">© 2023 Todos los Derechos Reservados | </strong>
+			<a href="https://github.com/upc-ws51-techteam" target="_blank" data-translate="team">TechTeam</a>
 		</div>
 	</footer>
 </html>

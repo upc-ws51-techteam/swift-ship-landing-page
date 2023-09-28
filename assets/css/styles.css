@@ -957,3 +957,16 @@ img {
 .about-the-card h3 {
 	text-align: center;
 }
+
+.nav__item img {
+	width: 30px; /* Adjust the width of the flags */
+	height: 20px; /* Adjust the height of the flags */
+	display: grid;
+	place-items: center;
+}
+
+.nav__item button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
